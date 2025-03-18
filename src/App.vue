@@ -19,6 +19,7 @@ const addTodo = () => {
       message: '不能添加相同的内容',
       type: 'warning'
     })
+    return;
   }
   todoList.value.push(trimmedValue);
   inputValue.value = ''; // 清空输入框
